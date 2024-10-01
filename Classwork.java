@@ -8,6 +8,10 @@ public class Classwork
     //e l e p h a n t           //length is 8
     //n=3 
     //eleant
+
+    System.out.println(delEnd("library", 5));
+    System.out.println(compareLower("framing", "framING"));
+    System.out.println(lengthFirst("Everything in its right place"));
   }
 
   // write solutions to problems below
@@ -23,4 +27,20 @@ public class Classwork
     return output;
   }
 
+  public static String delEnd(String word, int n) 
+  {
+    return word = word.substring(0, word.length() - n);
+  }
+
+  public static int compareLower(String word1, String word2) 
+  {
+    word1 = word1.toLowerCase();
+    word2 = word2.toLowerCase();
+    return word1.compareTo(word2);
+  }
+  public static int lengthFirst(String sentence)
+   { 
+      return sentence.indexOf(" ");
+   }
+   
 }
